@@ -1,16 +1,41 @@
 # React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## React Hooks Assignment – Week 9
 
-Currently, two official plugins are available:
+### Description
+This project demonstrates the use of React Hooks (`useState` and `useEffect`) through three simple components: a Counter, a Todo List, and a User Data Fetcher.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Components
 
-## React Compiler
+#### 1. Counter
+- Uses `useState` to manage a count value
+- Includes increment, decrement, and reset buttons
+- Displays the current count
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+#### 2. Todo List
+- Uses `useState` to manage a list of todos and input value
+- Allows users to add new todos
+- Displays all todos in a list
+- Each todo can be deleted individually
 
-## Expanding the ESLint configuration
+#### 3. User Data Fetcher
+- Uses `useState` to manage user data and loading state
+- Uses `useEffect` to fetch data when the component mounts
+- Fetches data from: https://jsonplaceholder.typicode.com/users/1
+- Displays user name, email, and city
+- Shows a loading message while fetching data
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Approach
+I broke the assignment into separate components to keep the code clean and readable. React hooks were used to manage state and side effects, following best practices.
+
+### Challenges Faced
+- Understanding how `useEffect` runs when a component mounts
+- Handling loading state while fetching data
+- Git and GitHub setup and pushing changes
+
+### Testing Checklist
+- Counter increments, decrements, and resets ✔
+- Todo list adds new items ✔
+- Todo list deletes items ✔
+- User data fetches and displays ✔
+- No console errors ✔
